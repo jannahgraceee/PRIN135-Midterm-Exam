@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sign Up.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstname">Given Name</label>
+                <input type="text" id="givenname" name="givenname" placeholder="Enter your Given Name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your Age" max="100" required>
+            </div>
+            <div>
+        <legend>Gender</legend>
+        <label for="male"><input id="gender" type="radio" name="gender" class="inline" checked /> Male</label>
+        <label for="female"><input id="gender" type="radio" name="gender" class="inline" /> Female</label>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your mail" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confpassword">Confirm Password</label>
+                <input type="confpassword" id="confpassword" name="confpassword" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year Level</label>
+                <select id="year" name="year">
+                    <option value="select">Select Year Level</option>
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="fourth">Fourth Year</option>
+                </select>
+                <div class="checkbox">
+                    <legend>What are your Skills? (Click those that apply)</legend>
+                    <div>
+                        <label for="option1">Computer Architecture</label>
+                        <input type="checkbox" id="option1" name="options[]" value="Option 1">
+                    </div>
+                    <div>
+                        <label for="option2">Computer Networking</label>
+                        <input type="checkbox" id="option2" name="options[]" value="Option 2">
+                    </div>
+                    <div>
+                        <label for="option3">Computer Programming</label>
+                        <input type="checkbox" id="option3" name="options[]" value="Option 3">
+                    </div>
+                    <div>
+                        <label for="option4">Database Management</label>
+                        <input type="checkbox" id="option4" name="options[]" value="Option 4">
+                    </div>
+                    <div>
+                        <label for="option5">system Administration</label>
+                        <input type="checkbox" id="option5" name="options[]" value="Option 5">
+                    </div>
+                    <div>
+                        <label for="option6">User Interface/Experience</label>
+                        <input type="checkbox" id="option6" name="options[]" value="Option 6">
+                    </div>
+                    <div>
+                        <label for="option7">Web Development</label>
+                        <input type="checkbox" id="option7" name="options[]" value="Option 7">
+                    </div>
+            </div>
+                <label for="bio">Other skills not mentioned above:</label>
+                    <textarea id="others" name="others" rows="5" cols="50" placeholder="Enter your other skills here..."></textarea>
+            </div>
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+        <div class="login-link">
+            <a href="Login Page.html">Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>
