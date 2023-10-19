@@ -20,12 +20,12 @@
             </div>
             <div class="form-group">
                 <label for="age">Age</label>
-                <input type="number" id="age" name="age" placeholder="Enter your Age" max="100" required>
+                <input type="number" id="age" name="age" placeholder="Enter your age" max="100" required>
             </div>
             <div>
         <legend>Gender</legend>
-        <label><input id="male" type="radio" name="gender" class="inline" checked /> Male</label>
-        <label><input id="female" type="radio" name="gender" class="inline" /> Female</label>
+        <label for="male"><input id="male" type="radio" name="gender" class="inline" value="male" checked /> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" class="inline" value="female"/> Female</label>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -48,37 +48,18 @@
                     <option value="third">Third Year</option>
                     <option value="fourth">Fourth Year</option>
                 </select>
-                <div class="checkbox">
-                    <legend>What are your Skills? (Click those that apply)</legend>
-                    <div>
-                        <label for="option1">Computer Architecture</label>
-                        <input type="checkbox" id="option1" name="options[]" value="Option 1">
-                    </div>
-                    <div>
-                        <label for="option2">Computer Networking</label>
-                        <input type="checkbox" id="option2" name="options[]" value="Option 2">
-                    </div>
-                    <div>
-                        <label for="option3">Computer Programming</label>
-                        <input type="checkbox" id="option3" name="options[]" value="Option 3">
-                    </div>
-                    <div>
-                        <label for="option4">Database Management</label>
-                        <input type="checkbox" id="option4" name="options[]" value="Option 4">
-                    </div>
-                    <div>
-                        <label for="option5">system Administration</label>
-                        <input type="checkbox" id="option5" name="options[]" value="Option 5">
-                    </div>
-                    <div>
-                        <label for="option6">User Interface/Experience</label>
-                        <input type="checkbox" id="option6" name="options[]" value="Option 6">
-                    </div>
-                    <div>
-                        <label for="option7">Web Development</label>
-                        <input type="checkbox" id="option7" name="options[]" value="Option 7">
-                    </div>
             </div>
+            <div class="checkbox">
+                <legend>What are your Skills? (Click those that apply)</legend>
+                <div>
+                    <label for="option1"><input type="checkbox" id="option1" name="options[]" value="Option 1">Computer Architecture</label>
+                    <label for="option2"><input type="checkbox" id="option2" name="options[]" value="Option 2">Computer Networking</label>
+                    <label for="option3"><input type="checkbox" id="option3" name="options[]" value="Option 3">Computer Programming</label>
+                    <label for="option4"><input type="checkbox" id="option4" name="options[]" value="Option 4">Database Management</label>
+                    <label for="option5"><input type="checkbox" id="option5" name="options[]" value="Option 5">System Administration</label>                        
+                    <label for="option6"><input type="checkbox" id="option6" name="options[]" value="Option 6">User Interface/Experience</label>
+                    <label for="option7"><input type="checkbox" id="option7" name="options[]" value="Option 7">Web Development</label>
+                </div>
                 <label for="bio">Other skills not mentioned above:</label>
                     <textarea id="others" name="others" rows="5" cols="50" placeholder="Enter your other skills here..."></textarea>
             </div>
